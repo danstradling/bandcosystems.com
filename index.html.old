@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANDCO Systems | Kent IT MSP, 3D Printing, AV, Streaming & DJ Services</title>
+  <meta name="description" content="BANDCO Systems is a Kent-based technology specialist providing direct, founder-led IT MSP services, precision 3D printing, business AV infrastructure, live streaming design, and professional DJ tuition.">
+  <meta name="keywords" content="BANDCO Systems, IT Support Kent, Solo MSP Kent, 3D Printing Kent, Business AV Installation, Live Streaming Setup, DJ Lessons Kent, bandcosystems.com, Kumonix">
+  <meta name="author" content="BANDCO Systems">
+  <link rel="canonical" href="https://bandcosystems.com/">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="BANDCO Systems | Specialist Tech Solutions Kent, UK">
+  <meta property="og:description" content="Direct, founder-delivered IT managed services, 3D printing, commercial AV, streaming workflows, and DJ tuition across Kent and the South East.">
+  <meta property="og:url" content="https://bandcosystems.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_GB">
+
+  <!-- LocalBusiness Schema (JSON-LD) for Kent, UK Local SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "BANDCO Systems",
+    "image": "https://bandcosystems.com/logo.svg",
+    "@id": "https://bandcosystems.com",
+    "url": "https://bandcosystems.com",
+    "email": "contact@bandcosystems.com",
+    "priceRange": "££",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Kent",
+      "addressCountry": "GB"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.2787,
+      "longitude": 0.5217
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ],
+    "areaServed": [
+      "Kent",
+      "Maidstone",
+      "Canterbury",
+      "Tunbridge Wells",
+      "Sevenoaks",
+      "Ashford",
+      "Medway",
+      "London & South East"
+    ],
+    "description": "Kent-based technology specialist providing solo IT MSP support, rapid 3D printing prototyping, commercial AV setups, broadcast streaming architecture, and DJ tuition."
+  }
+  </script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              teal: '#61B2B3',
+              red: '#D33E55',
+              dark: '#000000',
+              panel: '#0c1015',
+              panelAlt: '#111720',
+              border: '#1b2533',
+              borderLight: '#263445',
+              muted: '#94a3b8'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+            tech: ['Orbitron', 'Rajdhani', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #000000;
+      color: #FFFFFF;
+    }
+    .font-tech {
+      font-family: 'Orbitron', sans-serif;
+    }
+    .glow-teal {
+      box-shadow: 0 0 35px -5px rgba(97, 178, 179, 0.28);
+    }
+    .glow-red {
+      box-shadow: 0 0 35px -5px rgba(211, 62, 85, 0.28);
+    }
+    .card-hover:hover {
+      border-color: #61B2B3;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px -10px rgba(97, 178, 179, 0.25);
+    }
+    .card-hover-red:hover {
+      border-color: #D33E55;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px -10px rgba(211, 62, 85, 0.25);
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #000000;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1b2533;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #61B2B3;
+    }
+  </style>
+</head>
+<body class="bg-black text-white antialiased selection:bg-[#61B2B3] selection:text-black min-h-screen flex flex-col justify-between">
+
+  <!-- Operational Notice Bar -->
+  <aside aria-label="Operational status" class="bg-brand-panelAlt border-b border-brand-border text-center text-xs py-2 px-4 text-gray-300 flex items-center justify-center gap-2">
+    <span class="inline-block w-2 h-2 rounded-full bg-brand-teal animate-pulse" aria-hidden="true"></span>
+    <span>Based in Kent, UK &bull; Direct Founder Support &bull; Zero Call Centre Delays</span>
+  </aside>
+
+  <!-- Header Navigation -->
+  <header id="site-header" class="sticky top-0 z-40 bg-black/90 backdrop-blur-md border-b border-brand-border transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo Link -->
+      <a href="#" class="flex items-center gap-3.5 group focus:outline-none" aria-label="BANDCO Systems Homepage">
+        <div class="w-12 h-12 flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+          <img src="logo.svg" alt="BANDCO Systems Logo" class="w-full h-full object-contain drop-shadow-[0_0_10px_rgba(97,178,179,0.35)] transition-transform duration-300 group-hover:scale-105" />
+        </div>
+        <div class="flex flex-col">
+          <span class="font-tech text-xl sm:text-2xl font-black tracking-wider leading-none text-white">BANDCO<span class="text-brand-teal">.</span></span>
+          <span class="text-[10px] tracking-widest uppercase font-semibold text-brand-teal">Systems &bull; Kent, UK</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-gray-300" aria-label="Main Navigation">
+        <a href="#services" class="hover:text-brand-teal transition-colors">Services</a>
+        <a href="#it-msp" class="hover:text-brand-teal transition-colors">IT &amp; MSP</a>
+        <a href="#3d-printing" class="hover:text-brand-teal transition-colors">3D Printing</a>
+        <a href="#av-systems" class="hover:text-brand-teal transition-colors">Commercial AV</a>
+        <a href="#streaming" class="hover:text-brand-teal transition-colors">Live Streaming</a>
+        <a href="#dj-services" class="hover:text-brand-teal transition-colors">DJ Tuition</a>
+        <a href="#contact" class="hover:text-brand-teal transition-colors font-semibold text-white">Contact Info</a>
+      </nav>
+
+      <!-- Desktop Quick Actions -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="#contact" class="px-5 py-2.5 rounded-lg bg-brand-teal text-black font-bold text-sm hover:brightness-110 transition-all shadow-md shadow-brand-teal/20 flex items-center gap-2">
+          <i class="fa-solid fa-address-card text-xs" aria-hidden="true"></i> Direct Contact Info
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-toggle" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Toggle navigation menu" class="lg:hidden text-gray-300 hover:text-white p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-teal">
+        <i id="hamburger-icon" class="fa-solid fa-bars text-2xl" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="hidden lg:hidden bg-black/95 border-b border-brand-border px-6 py-6 transition-all duration-300">
+      <nav class="flex flex-col gap-4 text-base font-medium" aria-label="Mobile Navigation">
+        <a href="#services" class="mobile-nav-link text-gray-200 hover:text-brand-teal py-1">Services Overview</a>
+        <a href="#it-msp" class="mobile-nav-link text-gray-200 hover:text-brand-teal py-1">Solo IT MSP &amp; Cloud</a>
+        <a href="#3d-printing" class="mobile-nav-link text-gray-200 hover:text-brand-teal py-1">3D Printing &amp; Fabrication</a>
+        <a href="#av-systems" class="mobile-nav-link text-gray-200 hover:text-brand-teal py-1">Workplace &amp; Commercial AV</a>
+        <a href="#streaming" class="mobile-nav-link text-gray-200 hover:text-brand-teal py-1">Streaming Design &amp; Support</a>
+        <a href="#dj-services" class="mobile-nav-link text-gray-200 hover:text-brand-teal py-1">DJ Tuition &amp; Sound Services</a>
+        <a href="#contact" class="mobile-nav-link text-brand-teal font-semibold py-1">Direct Contact Details</a>
+        <a href="mailto:contact@bandcosystems.com" class="w-full mt-2 py-3 rounded-lg bg-brand-teal text-black font-bold text-center flex items-center justify-center gap-2">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i> Email contact@bandcosystems.com
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <!-- Hero Section -->
+    <section class="relative pt-14 pb-20 md:pt-24 md:pb-32 overflow-hidden border-b border-brand-border">
+      <!-- Ambient Lighting Blobs -->
+      <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[700px] h-[340px] bg-brand-teal/15 blur-[130px] rounded-full pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute top-1/2 right-4 w-[380px] h-[380px] bg-brand-red/10 blur-[140px] rounded-full pointer-events-none" aria-hidden="true"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-7 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-panel border border-brand-border text-xs font-semibold text-brand-teal mb-6">
+              <span class="w-2 h-2 rounded-full bg-brand-teal animate-pulse" aria-hidden="true"></span>
+              Kent, United Kingdom &bull; Direct Specialist Delivery
+            </div>
+
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6">
+              Specialist Systems. <br class="hidden sm:inline">
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#d2f3f4] to-brand-teal">Direct Technical Delivery.</span>
+            </h1>
+
+            <p class="text-base sm:text-lg text-gray-400 font-normal leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
+              BANDCO Systems provides hands-on technical solutions throughout Kent and the South East. Specialising in dedicated solo IT managed services, precision 3D printing and prototyping, commercial AV infrastructure, broadcast streaming workflows, and professional DJ tuition.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-teal text-black font-bold text-sm tracking-wide hover:brightness-110 transition-all flex items-center justify-center gap-3 shadow-lg shadow-brand-teal/25">
+                <i class="fa-solid fa-address-card" aria-hidden="true"></i> View Direct Contact Info
+              </a>
+              <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-panel border border-brand-border hover:border-brand-teal text-white font-semibold text-sm transition-all flex items-center justify-center gap-2">
+                <i class="fa-solid fa-layer-group text-brand-teal" aria-hidden="true"></i> Specialist Services
+              </a>
+            </div>
+
+            <!-- Key Operating Pillars -->
+            <div class="mt-12 pt-8 border-t border-brand-border grid grid-cols-3 gap-4 text-left">
+              <div>
+                <div class="font-tech text-xl sm:text-2xl font-bold text-white">Direct</div>
+                <div class="text-xs text-brand-muted">Founder Accountability</div>
+              </div>
+              <div>
+                <div class="font-tech text-xl sm:text-2xl font-bold text-brand-teal">Kent Base</div>
+                <div class="text-xs text-brand-muted">On-site &amp; Remote</div>
+              </div>
+              <div>
+                <div class="font-tech text-xl sm:text-2xl font-bold text-brand-red">Agile</div>
+                <div class="text-xs text-brand-muted">Zero Support Queues</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual: Large Vector Badge -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative w-80 sm:w-96 aspect-square p-8 rounded-3xl bg-brand-panel border border-brand-border glow-teal flex items-center justify-center">
+              <div class="absolute inset-0 bg-gradient-to-tr from-brand-teal/10 via-transparent to-brand-red/10 rounded-3xl pointer-events-none" aria-hidden="true"></div>
+              <img src="logo.svg" alt="BANDCO Systems Brand Emblem" class="w-full h-full object-contain relative z-10 drop-shadow-[0_0_20px_rgba(97,178,179,0.35)]" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-black relative" aria-labelledby="services-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-20">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-teal block mb-3">Specialist Services</span>
+          <h2 id="services-heading" class="text-3xl sm:text-5xl font-extrabold tracking-tight">Five Focused Disciplines. Single-Point Accountability.</h2>
+          <p class="text-gray-400 mt-4 text-base sm:text-lg">
+            Directly scoped, delivered, and supported for Kent businesses, independent organisations, and individual creators.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- 1. IT & Solo MSP (with Kumonix Association) -->
+          <article id="it-msp" class="bg-brand-panel border border-brand-border rounded-2xl p-8 card-hover transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-black border border-brand-border flex items-center justify-center text-brand-teal text-2xl mb-6">
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+              </div>
+              <span class="text-xs font-semibold text-brand-teal uppercase tracking-wider block mb-1">Managed Services</span>
+              <h3 class="text-2xl font-bold text-white mb-3">IT Support &amp; Solo MSP</h3>
+              <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                Dedicated one-man-band MSP support for small businesses, professional practices, and home offices across Kent who need direct, personal accountability without ticketing delays.
+              </p>
+              <ul class="space-y-3 text-xs text-gray-300 mb-6">
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-teal" aria-hidden="true"></i> Continuous endpoint security &amp; patch monitoring</li>
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-teal" aria-hidden="true"></i> Microsoft 365 migrations &amp; Azure cloud administration</li>
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-teal" aria-hidden="true"></i> Reliable off-site backup &amp; ransomware continuity</li>
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-teal" aria-hidden="true"></i> Cyber Essentials compliance scoping</li>
+              </ul>
+
+              <!-- Kumonix Association Box -->
+              <div class="mb-6 p-3 rounded-xl bg-black/60 border border-brand-border text-xs text-gray-400">
+                In association with 
+                <a href="https://kumonix.com" target="_blank" rel="noopener noreferrer" class="text-brand-teal hover:underline font-semibold inline-flex items-center gap-1">
+                  Kumonix <i class="fa-solid fa-arrow-up-right-from-square text-[10px]" aria-hidden="true"></i>
+                </a> 
+                for enterprise-grade endpoint management &amp; cloud consulting.
+              </div>
+            </div>
+            <a href="mailto:contact@bandcosystems.com?subject=Enquiry:%20IT%20Support%20%26%20MSP%20Services" class="w-full py-3 rounded-lg bg-black border border-brand-border hover:border-brand-teal text-brand-teal font-semibold text-xs tracking-wider uppercase text-center block transition-colors">
+              Enquire on IT Services &rarr;
+            </a>
+          </article>
+
+          <!-- 2. 3D Printing Services -->
+          <article id="3d-printing" class="bg-brand-panel border border-brand-border rounded-2xl p-8 card-hover transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-black border border-brand-border flex items-center justify-center text-brand-teal text-2xl mb-6">
+                <i class="fa-solid fa-cubes-stacked" aria-hidden="true"></i>
+              </div>
+              <span class="text-xs font-semibold text-brand-teal uppercase tracking-wider block mb-1">Additive Fabrication</span>
+              <h3 class="text-2xl font-bold text-white mb-3">3D Printing &amp; Prototyping</h3>
+              <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                High-precision additive manufacturing for rapid functional prototypes, custom electronics enclosures, replacement mechanical components, and low-volume batch runs.
+              </p>
+              <ul class="space-y-3 text-xs text-gray-300 mb-8">
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-teal" aria-hidden="true"></i> Precision engineering in PLA+, PETG, ABS, ASA &amp; TPU</li>
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-teal" aria-hidden="true"></i> CAD design evaluation &amp; slicing optimisation</li>
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-teal" aria-hidden="true"></i> Bespoke bracketry &amp; sensor housings</li>
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-teal" aria-hidden="true"></i> Rapid dispatch or collection across Kent</li>
+              </ul>
+            </div>
+            <a href="mailto:contact@bandcosystems.com?subject=Enquiry:%203D%20Printing%20Services" class="w-full py-3 rounded-lg bg-black border border-brand-border hover:border-brand-teal text-brand-teal font-semibold text-xs tracking-wider uppercase text-center block transition-colors">
+              Enquire on 3D Printing &rarr;
+            </a>
+          </article>
+
+          <!-- 3. Audio & Visual Services -->
+          <article id="av-systems" class="bg-brand-panel border border-brand-border rounded-2xl p-8 card-hover transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-black border border-brand-border flex items-center justify-center text-brand-teal text-2xl mb-6">
+                <i class="fa-solid fa-sliders" aria-hidden="true"></i>
+              </div>
+              <span class="text-xs font-semibold text-brand-teal uppercase tracking-wider block mb-1">Commercial Audio Visual</span>
+              <h3 class="text-2xl font-bold text-white mb-3">Business Audio &amp; Visual</h3>
+              <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                Integrated AV engineering for boardrooms, hospitality spaces, corporate training rooms, and retail environments requiring intelligible speech and crisp video switching.
+              </p>
+              <ul class="space-y-3 text-xs text-gray-300 mb-8">
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-teal" aria-hidden="true"></i> Microsoft Teams &amp; Zoom Rooms hardware setups</li>
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-teal" aria-hidden="true"></i> Multi-zone commercial background sound &amp; paging</li>
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-teal" aria-hidden="true"></i> Digital signage and 4K HDMI matrix distribution</li>
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-teal" aria-hidden="true"></i> Clean, concealed rack cabling and troubleshooting</li>
+              </ul>
+            </div>
+            <a href="mailto:contact@bandcosystems.com?subject=Enquiry:%20Audio%20Visual%20Services" class="w-full py-3 rounded-lg bg-black border border-brand-border hover:border-brand-teal text-brand-teal font-semibold text-xs tracking-wider uppercase text-center block transition-colors">
+              Enquire on AV Services &rarr;
+            </a>
+          </article>
+
+          <!-- 4. Streaming Design & Support -->
+          <article id="streaming" class="bg-brand-panel border border-brand-border rounded-2xl p-8 card-hover-red transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-black border border-brand-border flex items-center justify-center text-brand-red text-2xl mb-6">
+                <i class="fa-solid fa-tower-broadcast" aria-hidden="true"></i>
+              </div>
+              <span class="text-xs font-semibold text-brand-red uppercase tracking-wider block mb-1">Broadcast Infrastructure</span>
+              <h3 class="text-2xl font-bold text-white mb-3">Streaming Design &amp; Support</h3>
+              <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                Broadcast-quality streaming design for business presentations, hybrid webinars, content creators, and esports. Low-latency, multi-camera audio/video synchronization.
+              </p>
+              <ul class="space-y-3 text-xs text-gray-300 mb-8">
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-red" aria-hidden="true"></i> OBS Studio, vMix, and ATEM switcher configurations</li>
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-red" aria-hidden="true"></i> Multi-camera calibration &amp; zero-latency audio sync</li>
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-red" aria-hidden="true"></i> Custom overlays, stinger transitions &amp; Stream Deck macros</li>
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-red" aria-hidden="true"></i> Remote and on-site broadcast technical operation</li>
+              </ul>
+            </div>
+            <a href="mailto:contact@bandcosystems.com?subject=Enquiry:%20Streaming%20Design%20%26%20Support" class="w-full py-3 rounded-lg bg-black border border-brand-border hover:border-brand-red text-brand-red font-semibold text-xs tracking-wider uppercase text-center block transition-colors">
+              Enquire on Streaming &rarr;
+            </a>
+          </article>
+
+          <!-- 5. DJ Tuition & Services -->
+          <article id="dj-services" class="bg-brand-panel border border-brand-border rounded-2xl p-8 card-hover-red transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-black border border-brand-border flex items-center justify-center text-brand-red text-2xl mb-6">
+                <i class="fa-solid fa-headphones-simple" aria-hidden="true"></i>
+              </div>
+              <span class="text-xs font-semibold text-brand-red uppercase tracking-wider block mb-1">Audio Performance</span>
+              <h3 class="text-2xl font-bold text-white mb-3">DJ Tuition &amp; Sound Services</h3>
+              <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                Structured, one-to-one coaching tailored from foundational beatmatching up to club-standard Pioneer DJ and rekordbox workflows, paired with bespoke event sound solutions.
+              </p>
+              <ul class="space-y-3 text-xs text-gray-300 mb-8">
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-red" aria-hidden="true"></i> Hands-on manual beatmatching, EQ mixing &amp; phrasing</li>
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-red" aria-hidden="true"></i> Pioneer CDJ, DJM, and rekordbox standalone hardware</li>
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-red" aria-hidden="true"></i> Library curation, hot cues &amp; harmonic mixing theory</li>
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-red" aria-hidden="true"></i> Private function and corporate event performance</li>
+              </ul>
+            </div>
+            <a href="mailto:contact@bandcosystems.com?subject=Enquiry:%20DJ%20Tuition%20%26%20Services" class="w-full py-3 rounded-lg bg-black border border-brand-border hover:border-brand-red text-brand-red font-semibold text-xs tracking-wider uppercase text-center block transition-colors">
+              Enquire on DJ Lessons &rarr;
+            </a>
+          </article>
+
+          <!-- 6. Custom Consultancy & Integrations -->
+          <article class="bg-brand-panel border border-brand-border rounded-2xl p-8 card-hover transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-black border border-brand-border flex items-center justify-center text-brand-teal text-2xl mb-6">
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+              </div>
+              <span class="text-xs font-semibold text-brand-teal uppercase tracking-wider block mb-1">Hybrid Integration</span>
+              <h3 class="text-2xl font-bold text-white mb-3">Specialist Technical Consultancy</h3>
+              <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                Cross-disciplinary projects uniting IT network architecture, custom 3D printed mechanical enclosures, and AV routing for bespoke workspace builds.
+              </p>
+              <ul class="space-y-3 text-xs text-gray-300 mb-8">
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-teal" aria-hidden="true"></i> Studio &amp; workplace workspace infrastructure planning</li>
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-teal" aria-hidden="true"></i> Custom thermal dissipation housings &amp; bracketry</li>
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-teal" aria-hidden="true"></i> Objective procurement advice with no vendor bias</li>
+                <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-brand-teal" aria-hidden="true"></i> Plain British English technical consultation</li>
+              </ul>
+            </div>
+            <a href="mailto:contact@bandcosystems.com?subject=Enquiry:%20Specialist%20Technical%20Consultancy" class="w-full py-3 rounded-lg bg-black border border-brand-border hover:border-brand-teal text-brand-teal font-semibold text-xs tracking-wider uppercase text-center block transition-colors">
+              Enquire on Custom Build &rarr;
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Direct Contact Hub Section (NO FORM) -->
+    <section id="contact" class="py-24 bg-[#06080c] border-t border-b border-brand-border relative" aria-labelledby="contact-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-teal block mb-3">Direct Engagement</span>
+          <h2 id="contact-heading" class="text-3xl sm:text-5xl font-extrabold tracking-tight">Direct, Unfiltered Contact.</h2>
+          <p class="text-gray-400 mt-4 text-base sm:text-lg">
+            No endless web forms, no automated ticketing bots, and no call centres. When you reach out to BANDCO Systems, you speak directly with the engineer responsible for your project.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          <!-- Primary Direct Contact Card -->
+          <div class="lg:col-span-7 bg-brand-panel border border-brand-border rounded-3xl p-8 sm:p-10 glow-teal flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-8 pb-6 border-b border-brand-border">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-xl bg-black border border-brand-border flex items-center justify-center text-brand-teal text-xl">
+                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <span class="text-xs uppercase tracking-wider text-brand-muted block">Direct Contact Point</span>
+                    <h3 class="text-xl font-bold text-white">Central Inbox</h3>
+                  </div>
+                </div>
+                <span class="hidden sm:inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black border border-brand-teal/40 text-xs text-brand-teal font-medium">
+                  <i class="fa-solid fa-circle-check" aria-hidden="true"></i> 1 Business Day Response
+                </span>
+              </div>
+
+              <!-- Main Email Copy Box -->
+              <div class="bg-black border border-brand-border rounded-2xl p-5 mb-8">
+                <div class="text-xs uppercase tracking-wider text-gray-400 mb-2 font-medium">Official Business Email</div>
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <span id="target-email" class="font-mono text-lg sm:text-2xl font-bold text-brand-teal select-all break-all">
+                    contact@bandcosystems.com
+                  </span>
+                  <div class="flex items-center gap-2">
+                    <button onclick="copyEmailToClipboard()" id="copy-btn" class="px-4 py-2 rounded-lg bg-[#182230] hover:bg-brand-teal hover:text-black text-white text-xs font-semibold transition-all flex items-center gap-2 cursor-pointer focus:ring-2 focus:ring-brand-teal">
+                      <i class="fa-regular fa-copy" aria-hidden="true"></i> <span>Copy Email</span>
+                    </button>
+                    <a href="mailto:contact@bandcosystems.com" class="px-4 py-2 rounded-lg bg-brand-teal text-black text-xs font-bold hover:brightness-110 transition-all flex items-center gap-2">
+                      <i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i> Open Mail
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Operating Hours & Parameters -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                <div class="bg-black/60 border border-brand-border rounded-xl p-4">
+                  <div class="flex items-center gap-2 text-brand-teal text-sm font-semibold mb-1">
+                    <i class="fa-regular fa-clock" aria-hidden="true"></i> Business Hours
+                  </div>
+                  <div class="text-white text-sm font-medium">Monday &ndash; Friday</div>
+                  <div class="text-gray-400 text-xs">09:00 &ndash; 17:00 GMT</div>
+                  <div class="text-[11px] text-gray-500 mt-1">Out-of-hours event AV support by prior arrangement</div>
+                </div>
+
+                <div class="bg-black/60 border border-brand-border rounded-xl p-4">
+                  <div class="flex items-center gap-2 text-brand-red text-sm font-semibold mb-1">
+                    <i class="fa-solid fa-bolt" aria-hidden="true"></i> Response Standard
+                  </div>
+                  <div class="text-white text-sm font-medium">Direct Turnaround</div>
+                  <div class="text-gray-400 text-xs">Replies within 1 business day</div>
+                  <div class="text-[11px] text-gray-500 mt-1">Written assessment directly from the founder</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- vCard and Compliance Footer -->
+            <div class="pt-6 border-t border-brand-border flex flex-wrap items-center justify-between gap-4">
+              <button onclick="downloadVCard()" class="px-4 py-2.5 rounded-lg bg-black border border-brand-border hover:border-brand-teal text-gray-200 text-xs font-semibold transition-colors flex items-center gap-2 cursor-pointer focus:ring-2 focus:ring-brand-teal">
+                <i class="fa-solid fa-address-card text-brand-teal" aria-hidden="true"></i> Save vCard to Contacts (.vcf)
+              </button>
+              <div class="text-xs text-brand-teal flex items-center gap-1.5 font-medium">
+                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i> UK GDPR Compliant Operations
+              </div>
+            </div>
+          </div>
+
+          <!-- Regional Focus & Email Scoping Card -->
+          <div class="lg:col-span-5 flex flex-col justify-between gap-6">
+            
+            <!-- Kent Operational Reach -->
+            <div class="bg-brand-panel border border-brand-border rounded-3xl p-6 sm:p-8">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-xl bg-black border border-brand-border flex items-center justify-center text-brand-red">
+                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h4 class="text-base font-bold text-white">Kent &amp; Regional Coverage</h4>
+                  <span class="text-xs text-gray-400">Headquartered in Kent, United Kingdom</span>
+                </div>
+              </div>
+
+              <p class="text-xs text-gray-300 leading-relaxed mb-4">
+                Providing rapid on-site attendance throughout Kent and remote engineering services across the wider United Kingdom:
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2.5 py-1 rounded-md bg-black border border-brand-border text-[11px] text-gray-300">Maidstone</span>
+                <span class="px-2.5 py-1 rounded-md bg-black border border-brand-border text-[11px] text-gray-300">Tunbridge Wells</span>
+                <span class="px-2.5 py-1 rounded-md bg-black border border-brand-border text-[11px] text-gray-300">Canterbury</span>
+                <span class="px-2.5 py-1 rounded-md bg-black border border-brand-border text-[11px] text-gray-300">Sevenoaks</span>
+                <span class="px-2.5 py-1 rounded-md bg-black border border-brand-border text-[11px] text-gray-300">Ashford</span>
+                <span class="px-2.5 py-1 rounded-md bg-black border border-brand-border text-[11px] text-gray-300">Medway</span>
+                <span class="px-2.5 py-1 rounded-md bg-black border border-brand-border text-[11px] text-brand-teal">London &amp; South East</span>
+              </div>
+
+              <div class="text-[11px] text-gray-400 pt-3 border-t border-brand-border flex items-center gap-2">
+                <i class="fa-solid fa-van-shuttle text-brand-teal" aria-hidden="true"></i> On-site dispatches available for managed contract clients.
+              </div>
+            </div>
+
+            <!-- Helpful Email Scoping Guide -->
+            <div class="bg-brand-panel border border-brand-border rounded-3xl p-6 sm:p-8">
+              <h4 class="text-sm font-bold text-white mb-2 flex items-center gap-2">
+                <i class="fa-solid fa-lightbulb text-brand-teal" aria-hidden="true"></i> Recommended Email Details
+              </h4>
+              <p class="text-xs text-gray-400 mb-3 leading-relaxed">
+                To receive an immediate, accurate assessment, consider mentioning:
+              </p>
+              <ul class="space-y-1.5 text-xs text-gray-300">
+                <li class="flex items-start gap-2">
+                  <span class="text-brand-teal font-bold">&bull;</span>
+                  <span><strong>IT Services:</strong> Endpoint count, current cloud platforms (e.g. M365).</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-brand-teal font-bold">&bull;</span>
+                  <span><strong>3D Printing:</strong> File formats (STL, STEP), material preference &amp; volume.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-brand-teal font-bold">&bull;</span>
+                  <span><strong>AV / Streaming:</strong> Venue size, room acoustics, or target streaming platforms.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-brand-teal font-bold">&bull;</span>
+                  <span><strong>DJ Tuition:</strong> Experience level and specific hardware goals.</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Why BANDCO Section -->
+    <section class="py-24 bg-black" aria-labelledby="why-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-6">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-teal block mb-3">The One-Man-Band Advantage</span>
+            <h2 id="why-heading" class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-6">
+              Engineering Precision. <br>
+              <span class="text-brand-teal">Direct Dedication.</span>
+            </h2>
+            
+            <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-5">
+              Traditional IT managed service providers and AV agencies often lock clients into impersonal ticket systems, high overhead retainers, and endless account managers who lack hands-on technical literacy.
+            </p>
+            
+            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+              BANDCO Systems operates as your agile, Kent-based technical collaborator. You speak straight to the engineer who configures your firewalls, slices your 3D parts, integrates your audio matrices, or coaches your DJ performance.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-brand-border">
+              <div class="p-4 rounded-xl bg-brand-panel border border-brand-border">
+                <i class="fa-solid fa-sterling-sign text-brand-red text-xl mb-2" aria-hidden="true"></i>
+                <h4 class="text-white font-bold text-sm mb-1">Transparent Pricing</h4>
+                <p class="text-gray-400 text-xs">Clear GBP (£) estimates with zero hidden markups or predatory long-term lock-ins.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-brand-panel border border-brand-border">
+                <i class="fa-solid fa-scale-balanced text-brand-teal text-xl mb-2" aria-hidden="true"></i>
+                <h4 class="text-white font-bold text-sm mb-1">UK Regulatory Rigour</h4>
+                <p class="text-gray-400 text-xs">Fully compliant with the UK GDPR and the Data Protection Act 2018.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6">
+            <div class="p-8 sm:p-10 rounded-2xl bg-brand-panel border border-brand-border glow-teal">
+              <h3 class="text-xl font-bold text-white mb-6 flex items-center justify-between">
+                <span>The BANDCO Commitment</span>
+                <span class="text-xs font-semibold text-brand-teal font-tech uppercase tracking-wider">Kent, UK</span>
+              </h3>
+
+              <div class="space-y-6">
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 rounded-lg bg-black border border-brand-border flex-shrink-0 flex items-center justify-center text-brand-teal font-bold text-sm font-tech">
+                    01
+                  </div>
+                  <div>
+                    <h4 class="text-white font-bold text-sm mb-1">Zero Ticket Escalation Queues</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed">Your message is received and answered directly by the practitioner who manages your setup and understands your infrastructure history.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 rounded-lg bg-black border border-brand-border flex-shrink-0 flex items-center justify-center text-brand-teal font-bold text-sm font-tech">
+                    02
+                  </div>
+                  <div>
+                    <h4 class="text-white font-bold text-sm mb-1">Cross-Disciplinary Versatility</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed">Unique synergy between cloud computing, physical rapid prototyping, audio acoustics, and live media broadcasting under one roof.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 rounded-lg bg-black border border-brand-border flex-shrink-0 flex items-center justify-center text-brand-teal font-bold text-sm font-tech">
+                    03
+                  </div>
+                  <div>
+                    <h4 class="text-white font-bold text-sm mb-1">Pragmatic, Honest Guidance</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed">If a component can be repaired, 3D printed, or maintained economically, we will always advocate for that instead of selling superfluous hardware.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-[#040507] border-t border-brand-border pt-16 pb-24 md:pb-12 text-sm text-gray-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 flex-shrink-0">
+              <img src="logo.svg" alt="BANDCO Systems Logo" class="w-full h-full object-contain" />
+            </div>
+            <div>
+              <span class="font-tech text-xl font-bold text-white tracking-wider">BANDCO Systems</span>
+              <span class="text-xs text-brand-teal block">bandcosystems.com</span>
+            </div>
+          </div>
+          <p class="text-xs text-gray-400 max-w-md leading-relaxed mb-4">
+            Independent technology specialist based in Kent, UK. Direct solo IT managed services, precision additive 3D fabrication, commercial AV setups, streaming workflows, and DJ tuition.
+          </p>
+          <div class="text-xs text-gray-500 mb-2">
+            Subject to the laws and jurisdiction of England &amp; Wales.
+          </div>
+          
+          <!-- Kumonix Associated Enterprise Partner Backlink -->
+          <div class="text-xs text-gray-400 pt-2 border-t border-brand-border/60">
+            Associated Enterprise Partner: 
+            <a href="https://kumonix.com" target="_blank" rel="noopener noreferrer" class="text-brand-teal hover:underline font-medium inline-flex items-center gap-1">
+              Kumonix <i class="fa-solid fa-arrow-up-right-from-square text-[10px]" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Disciplines</h4>
+          <ul class="space-y-2.5 text-xs text-gray-400">
+            <li><a href="#it-msp" class="hover:text-brand-teal transition-colors">IT &amp; Solo MSP</a></li>
+            <li><a href="#3d-printing" class="hover:text-brand-teal transition-colors">3D Printing &amp; Prototyping</a></li>
+            <li><a href="#av-systems" class="hover:text-brand-teal transition-colors">Business Audio Visual</a></li>
+            <li><a href="#streaming" class="hover:text-brand-teal transition-colors">Live Streaming Systems</a></li>
+            <li><a href="#dj-services" class="hover:text-brand-teal transition-colors">DJ Tuition &amp; Sound</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">UK Legal &amp; Compliance</h4>
+          <ul class="space-y-2.5 text-xs text-gray-400">
+            <li><a href="#" onclick="openModal(event, 'privacy')" class="hover:text-brand-teal transition-colors">UK GDPR Privacy Notice</a></li>
+            <li><a href="#" onclick="openModal(event, 'cookies')" class="hover:text-brand-teal transition-colors">Cookie Policy (PECR)</a></li>
+            <li><a href="#" onclick="openModal(event, 'terms')" class="hover:text-brand-teal transition-colors">Terms of Business</a></li>
+            <li><a href="#" onclick="openModal(event, 'accessibility')" class="hover:text-brand-teal transition-colors">Accessibility Statement</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-brand-border flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+        <p>&copy; <span id="year-placeholder"></span> BANDCO Systems. All rights reserved. Kent, United Kingdom.</p>
+        <p class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-brand-teal" aria-hidden="true"></span> British English (en-GB) &bull; bandcosystems.com
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky Bottom Action Bar -->
+  <aside class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-black/95 backdrop-blur-md border-t border-brand-border px-4 py-3 flex items-center justify-between gap-3" aria-label="Mobile direct actions">
+    <a href="mailto:contact@bandcosystems.com" class="flex-1 py-2.5 rounded-lg bg-brand-teal text-black text-center text-xs font-bold flex items-center justify-center gap-2 shadow-md">
+      <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Email Direct
+    </a>
+    <button onclick="copyEmailToClipboard()" class="flex-1 py-2.5 rounded-lg bg-brand-panel border border-brand-border text-center text-xs font-semibold text-gray-200 flex items-center justify-center gap-2">
+      <i class="fa-regular fa-copy text-brand-teal" aria-hidden="true"></i> Copy Email
+    </button>
+  </aside>
+
+  <!-- Cookie Consent Banner (UK GDPR & PECR Compliant) -->
+  <aside id="cookie-banner" class="fixed bottom-16 md:bottom-6 left-4 right-4 md:left-auto md:right-6 md:max-w-lg z-50 bg-brand-panel border border-brand-border p-5 rounded-2xl shadow-2xl hidden" role="region" aria-label="Cookie consent banner">
+    <div class="flex items-start gap-3">
+      <i class="fa-solid fa-cookie-bite text-brand-teal text-xl mt-1" aria-hidden="true"></i>
+      <div>
+        <h4 class="text-sm font-bold text-white mb-1">UK GDPR &amp; PECR Cookie Notice</h4>
+        <p class="text-xs text-gray-400 leading-relaxed mb-4">
+          BANDCO Systems uses essential local storage strictly to remember interface preferences. We do not use third-party tracking scripts, ad pixels, or profile visitor data.
+        </p>
+        <div class="flex flex-wrap items-center gap-2">
+          <button onclick="setCookieChoice('essential')" class="px-3.5 py-1.5 rounded-lg bg-black border border-brand-border text-xs font-semibold text-gray-300 hover:text-white transition-colors cursor-pointer">
+            Essential Only
+          </button>
+          <button onclick="setCookieChoice('all')" class="px-4 py-1.5 rounded-lg bg-brand-teal text-black text-xs font-bold hover:brightness-110 transition-all cursor-pointer">
+            Accept All
+          </button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Global Legal & Information Modal -->
+  <div id="global-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-4 hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="bg-brand-panel border border-brand-border rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative max-h-[85vh] overflow-y-auto">
+      
+      <button onclick="closeModal(event)" aria-label="Close modal dialog" class="absolute top-6 right-6 text-gray-400 hover:text-white text-lg cursor-pointer">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+      
+      <div id="modal-body-container">
+        <!-- Dynamically injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast for Clipboard Actions -->
+  <div id="toast" class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 px-4 py-2.5 rounded-xl bg-brand-teal text-black text-xs font-bold shadow-xl transition-all duration-300 opacity-0 pointer-events-none flex items-center gap-2" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+    <span>Email address copied to clipboard!</span>
+  </div>
+
+  <script>
+    // Dynamic year in footer
+    document.getElementById('year-placeholder').textContent = new Date().getFullYear();
+
+    // Accessible Mobile Navigation Drawer
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const mobileDrawer = document.getElementById('mobile-drawer');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    mobileToggle.addEventListener('click', () => {
+      const isHidden = mobileDrawer.classList.toggle('hidden');
+      const expanded = !isHidden;
+      mobileToggle.setAttribute('aria-expanded', expanded);
+      hamburgerIcon.className = expanded ? 'fa-solid fa-xmark text-2xl' : 'fa-solid fa-bars text-2xl';
+    });
+
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        const targetId = link.getAttribute('href');
+        if (targetId && targetId.startsWith('#')) {
+          e.preventDefault();
+          mobileDrawer.classList.add('hidden');
+          mobileToggle.setAttribute('aria-expanded', 'false');
+          hamburgerIcon.className = 'fa-solid fa-bars text-2xl';
+
+          setTimeout(() => {
+            const targetElem = document.querySelector(targetId);
+            if (targetElem) {
+              targetElem.scrollIntoView({ behavior: 'smooth' });
+            }
+          }, 120);
+        }
+      });
+    });
+
+    // Copy Email to Clipboard helper
+    function copyEmailToClipboard() {
+      const email = "contact@bandcosystems.com";
+      const textarea = document.createElement("textarea");
+      textarea.value = email;
+      textarea.style.position = "fixed";
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+      textarea.select();
+      
+      try {
+        document.execCommand('copy');
+        showToast("Email address copied to clipboard: contact@bandcosystems.com");
+      } catch (err) {
+        prompt("Copy email address below:", email);
+      }
+      document.body.removeChild(textarea);
+    }
+
+    // Dynamic Toast Notification
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      toast.querySelector('span').textContent = message;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 2500);
+    }
+
+    // Generate & download vCard file (.vcf)
+    function downloadVCard() {
+      const vCardData = [
+        "BEGIN:VCARD",
+        "VERSION:3.0",
+        "FN:BANDCO Systems",
+        "ORG:BANDCO Systems",
+        "EMAIL;TYPE=WORK,INTERNET:contact@bandcosystems.com",
+        "URL:https://bandcosystems.com",
+        "ADR;TYPE=WORK:;;Kent;;;United Kingdom",
+        "NOTE:Specialist Solo IT MSP, 3D Printing, Business AV Systems, Live Streaming & DJ Tuition.",
+        "END:VCARD"
+      ].join("\r\n");
+
+      const blob = new Blob([vCardData], { type: "text/vcard;charset=utf-8;" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.setAttribute("download", "BANDCO_Systems.vcf");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      showToast("vCard downloaded! Open file to add to contacts.");
+    }
+
+    // Cookie Consent Persistence (UK GDPR / PECR compliance)
+    window.addEventListener('DOMContentLoaded', () => {
+      const consent = localStorage.getItem('bandco_cookie_consent');
+      if (!consent) {
+        document.getElementById('cookie-banner').classList.remove('hidden');
+      }
+    });
+
+    function setCookieChoice(preference) {
+      localStorage.setItem('bandco_cookie_consent', preference);
+      document.getElementById('cookie-banner').classList.add('hidden');
+    }
+
+    // Legal Content Modals in British English
+    const legalNotices = {
+      privacy: `
+        <h3 id="modal-title" class="text-xl font-bold text-white mb-4">UK GDPR &amp; Data Protection Privacy Notice</h3>
+        <div class="space-y-4 text-xs text-gray-300 leading-relaxed">
+          <p><strong>1. Introduction</strong><br>BANDCO Systems ("we", "our", "us") operates bandcosystems.com in compliance with the UK General Data Protection Regulation (UK GDPR) and Data Protection Act 2018.</p>
+          <p><strong>2. Information We Receive</strong><br>When you contact us directly via email (contact@bandcosystems.com), we receive your email address, name, and the technical scope of your correspondence.</p>
+          <p><strong>3. Lawful Basis for Processing</strong><br>We process personal correspondence under the lawful basis of Legitimate Interest and Contractual Necessity to evaluate, quote, and execute specialist technical services.</p>
+          <p><strong>4. Data Retention &amp; Rights</strong><br>We never sell or monetise personal records. You retain the right to request access to, or deletion of, your communication records at any time by contacting contact@bandcosystems.com.</p>
+        </div>
+      `,
+      cookies: `
+        <h3 id="modal-title" class="text-xl font-bold text-white mb-4">Cookie Policy (PECR Compliance)</h3>
+        <div class="space-y-4 text-xs text-gray-300 leading-relaxed">
+          <p>This website operates in compliance with the Privacy and Electronic Communications Regulations (PECR).</p>
+          <p><strong>Essential Local Storage:</strong> We use local storage purely to remember your cookie consent decision so the notice does not continuously re-appear.</p>
+          <p><strong>No Invasive Profiling:</strong> We do not deploy invasive marketing trackers, cross-site profiling cookies, or third-party ad networks.</p>
+        </div>
+      `,
+      terms: `
+        <h3 id="modal-title" class="text-xl font-bold text-white mb-4">Terms of Business</h3>
+        <div class="space-y-4 text-xs text-gray-300 leading-relaxed">
+          <p><strong>1. Scope of Engagement</strong><br>BANDCO Systems delivers IT managed services, 3D printing fabrication, commercial AV installations, live streaming design, and DJ tuition under mutually agreed written specifications.</p>
+          <p><strong>2. Pricing &amp; Commercials</strong><br>All quotes are supplied in Pounds Sterling (£ GBP) and remain valid for 30 calendar days unless stated otherwise.</p>
+          <p><strong>3. Governing Law</strong><br>All commercial relationships and website terms are governed exclusively by the laws of England and Wales.</p>
+        </div>
+      `,
+      accessibility: `
+        <h3 id="modal-title" class="text-xl font-bold text-white mb-4">Accessibility Statement</h3>
+        <div class="space-y-4 text-xs text-gray-300 leading-relaxed">
+          <p>BANDCO Systems is dedicated to providing an accessible web experience adhering to the Web Content Accessibility Guidelines (WCAG 2.1 Level AA). Our platform features semantic landmarks, screen reader attributes, keyboard navigability, and clear visual contrast ratios.</p>
+        </div>
+      `
+    };
+
+    function openModal(e, key) {
+      if (e && e.preventDefault) e.preventDefault();
+      const modal = document.getElementById('global-modal');
+      const container = document.getElementById('modal-body-container');
+      
+      if (legalNotices[key]) {
+        container.innerHTML = legalNotices[key];
+        modal.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+      }
+    }
+
+    function closeModal(e) {
+      if (e && e.preventDefault) e.preventDefault();
+      const modal = document.getElementById('global-modal');
+      modal.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+    document.getElementById('global-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'global-modal') closeModal();
+    });
+  </script>
+</body>
+</html>

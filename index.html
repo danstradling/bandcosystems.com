@@ -260,10 +260,34 @@
             </div>
           </div>
 
+          <!-- Hero Visual: CAD Model Showcase -->
           <div class="lg:col-span-5 flex justify-center">
-            <div class="relative w-80 sm:w-96 aspect-square p-8 rounded-3xl bg-brand-panel border border-brand-border glow-teal flex items-center justify-center">
-              <div class="absolute inset-0 bg-gradient-to-tr from-brand-teal/10 via-transparent to-brand-red/10 rounded-3xl pointer-events-none" aria-hidden="true"></div>
-              <img src="logo.svg" alt="BANDCO Systems Brand Emblem" class="w-full h-full object-contain relative z-10 drop-shadow-[0_0_20px_rgba(97,178,179,0.35)]" />
+            <div class="relative w-full max-w-md rounded-3xl bg-brand-panel border border-brand-border glow-teal overflow-hidden p-3 group">
+              <div class="relative rounded-2xl overflow-hidden bg-black/90 border border-brand-border/80">
+                <img 
+                  src="https://bandcosystems.com/images/cadmodel.png" 
+                  alt="Parametric CAD design of single cup holder and DAB controller mount for Citroen C5 X7" 
+                  class="w-full h-auto object-contain p-2 transition-transform duration-500 group-hover:scale-105"
+                />
+                
+                <!-- Model Overlay Spec Tag -->
+                <div class="p-4 bg-brand-panelAlt/95 border-t border-brand-border">
+                  <div class="flex items-center justify-between gap-2 mb-1.5">
+                    <span class="text-[11px] font-bold text-brand-teal font-tech uppercase tracking-wider flex items-center gap-1.5">
+                      <i class="fa-solid fa-drafting-compass" aria-hidden="true"></i> Parametric CAD Design
+                    </span>
+                    <span class="px-2 py-0.5 rounded text-[10px] bg-black text-gray-300 border border-brand-border">
+                      Citroën C5 X7
+                    </span>
+                  </div>
+                  <h3 class="text-sm font-bold text-white leading-snug">
+                    Single Cup Holder &amp; DAB Mount
+                  </h3>
+                  <p class="text-[11px] text-gray-400 mt-1 leading-relaxed">
+                    Engineered with a flush vertical face for tape-mounting a DAB radio controller, maintaining OEM dashboard fitment.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
